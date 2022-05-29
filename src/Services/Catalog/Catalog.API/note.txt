@@ -1,0 +1,12 @@
+﻿
+1. open terminal : docker run -d -p 27017:27017 --name shopping-mongo mongo
+
+2. test on docker:  docker-compose -f .\docker-compose.yml -f .\docker-compose.override.yml up -d
+	or 
+		docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
+		docker-compose -f docker-compose.yml -f docker-compose.override.yml down
+3. brower : http://localhost:8000/swagger/index.html
+
+4. mongo client : 
+	- docker run -d -p 3000:3000 mongoclient/mongoclient
+	- http://localhost:3000
