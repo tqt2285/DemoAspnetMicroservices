@@ -19,3 +19,10 @@
 
 6. portainer docker: 
 	- http://localhost:9000/ admin / admin@123456
+
+7. PostgreSQL 
+	- Discount.API	http://localhost:8002/swagger/index.html	
+		+ Npgsql - .NET Access to PostgreSQL
+		+ Dapper ORM
+	- pgadmin : PostgreSQL Tools
+
