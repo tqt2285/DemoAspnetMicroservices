@@ -5,8 +5,17 @@
 	or 
 		docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
 		docker-compose -f docker-compose.yml -f docker-compose.override.yml down
-3. brower : http://localhost:8000/swagger/index.html
+3. brower :
+	- Catalog.API	http://localhost:8000/swagger/index.html  
+	- Basket.API	http://localhost:8001/swagger/index.html 
 
 4. mongo client : 
 	- docker run -d -p 3000:3000 mongoclient/mongoclient
 	- http://localhost:3000
+
+5. redis 
+	- docker pull redis
+	- docker run -d -p 6379:6379 --name aspnetrun-redis redis
+
+6. portainer docker: 
+	- http://localhost:9000/ admin / admin@123456
